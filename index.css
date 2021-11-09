@@ -201,17 +201,12 @@ h1{
     font-size: 18px;
 }
 
-.block_decouvrir:hover {
-    color: grey;
-}
-
 .block_decouvrir{
     margin: 1rem;
     width: 33.33%;
     padding: 1px;
     border: 2px solid #F8F8F8;
     background: #FFF
-    
 }
 
 .block_decouvrir img {
@@ -227,7 +222,42 @@ section:nth-child(3){
 
 .section_financement {
     display: flex;
-    align-items: center;
     justify-content: center;
     margin-bottom: 5em;
+}
+
+.financement_texte h2 {
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.section_financement{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+.block_financement{
+    margin: 1rem;
+    width: 33.33%;
+    padding: 1px;
+    border: 2px solid #F8F8F8;
+    background: #FFF
+}
+
+.block_financement img {
+    max-width: 100%;
+    height: auto;
+}
+
+.block_decouvrir h3 {
+    font-size: 18px;
+}
+
+.type_financement{
+    color: #F83131;
 }
