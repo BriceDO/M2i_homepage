@@ -55,6 +55,8 @@ header nav ul li{
     display: flex;
     justify-content: space-between;
     margin-bottom: 5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 /* CALL TO ACTION */
@@ -77,6 +79,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .recherche_input input {
@@ -103,10 +106,10 @@ h1{
 }
 
 .recherche p {
-    display: flex;
-    justify-content: center;
+    width: 100%;
     margin-bottom: 5em;
     font-size: 10px;
+    margin-left: 30em;
 }
 
 .video {
@@ -203,15 +206,31 @@ h1{
 
 .block_decouvrir{
     margin: 1rem;
-    width: 33.33%;
-    padding: 1px;
-    border: 2px solid #F8F8F8;
     background: #FFF
 }
 
 .block_decouvrir img {
     max-width: 100%;
     height: auto;
+}
+
+.cadre {
+    content: "";
+    padding: 10px;
+    background-color: white;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.cadre:hover{
+    background-color: #F0F1F5;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.cadre:hover .block_decouvrir{
+    background-color: #F0F1F5;
+    transition: all 0.2s ease-in;
 }
 
 /* SECTION FINANCER FORMATION */
@@ -232,6 +251,12 @@ section:nth-child(3){
     display: flex;
     justify-content: center;
     padding-top: 1em;
+    padding-bottom: .5em;
+}
+
+.financement_texte p {
+    display: flex;
+    justify-content: center;
     padding-bottom: 1em;
 }
 
@@ -243,9 +268,6 @@ section:nth-child(3){
 
 .block_financement{
     margin: 1rem;
-    width: 33.33%;
-    padding: 1px;
-    border: 2px solid #F8F8F8;
     background: #FFF
 }
 
@@ -254,10 +276,18 @@ section:nth-child(3){
     height: auto;
 }
 
-.block_decouvrir h3 {
-    font-size: 18px;
+.block_financement h3 {
+    font-size: 17px;
 }
 
 .type_financement{
+    font-size: 10px;
     color: #F83131;
 }
+
+.cadre:hover .block_financement{
+    background-color: #F0F1F5;
+    transition: all 0.2s ease-in;
+}
+
+/* ABOUT */
