@@ -76,6 +76,7 @@ h1{
 .recherche_input {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .recherche_input input {
@@ -89,6 +90,7 @@ h1{
 .icone_chercher{
     text-align: left;
     cursor: pointer;
+    margin-left: .5em;
 }
 
 .icone_chercher::before{
@@ -179,7 +181,7 @@ h1{
 
 /* SECTION DECOUVRIR FORMATION */
 
-h2{
+.decouvrir_texte h2{
     display: flex;
     justify-content: center;
     margin-top: 2em;
@@ -188,7 +190,44 @@ h2{
     color: #F83131;
 }
 
-.section_decouvrir {
+.section_decouvrir{
     display: flex;
+    align-items: center;
     justify-content: center;
+    margin-bottom: 5em;
+}
+
+.block_decouvrir h3 {
+    font-size: 18px;
+}
+
+.block_decouvrir:hover {
+    color: grey;
+}
+
+.block_decouvrir{
+    margin: 1rem;
+    width: 33.33%;
+    padding: 1px;
+    border: 2px solid #F8F8F8;
+    background: #FFF
+    
+}
+
+.block_decouvrir img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* SECTION FINANCER FORMATION */
+
+section:nth-child(3){
+    background-color: #EDEDED;
+}
+
+.section_financement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5em;
 }
