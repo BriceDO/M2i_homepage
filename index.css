@@ -35,6 +35,7 @@ header nav ul li{
 
 .icons_header ul {
     display: flex;
+    margin-right: 2em;
 }
 
 .icons_header ul li {
@@ -50,15 +51,10 @@ header nav ul li{
     align-items: center;
 }
 
-.overlay {
-    position:absolute;
-    top:0;
-    left:0;
-    /* z-index:1; */
-}
-
 .barre_header {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 5em;
 }
 
 /* CALL TO ACTION */
@@ -69,6 +65,9 @@ header nav ul li{
 }
 
 h1{
+    margin-top: .1em;
+    margin-bottom: .1em;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     font-size: 40px;
@@ -84,11 +83,28 @@ h1{
     font-size: 40px;
     border: 2px solid #fff;
     background: transparent;
+    text-align: center;
 }
 
-.recherche_input i {
-    border-radius: 35px;
-    font-size: 40px;
+.icone_chercher{
+    text-align: left;
+    cursor: pointer;
+}
+
+.icone_chercher::before{
+    font-size: 25px;
+    background-color: #F83131;
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.recherche p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5em;
+    font-size: 10px;
 }
 
 .video {
@@ -103,6 +119,41 @@ h1{
     overflow: hidden;
     width: 100vw;
     color: white;
+}
+
+.note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note i {
+    font-size: 20px;
+}
+
+.note p {
+    font-size: 25px;
+    margin-right: 0.5em;
+}
+
+.fa-star:before {
+    content: "\f005";
+    font-size: 25px;
+}
+
+.fa-star-half-alt:before{
+    font-size: 25px;
+}
+
+.avis {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5em;
+    font-style: italic;
+}
+
+.fa-star, .fa-star-half-alt {
+    color: yellow;
 }
 
 .overlay {
@@ -124,4 +175,20 @@ h1{
 .wrapper {
     z-index: 5;
     position: relative;
+}
+
+/* SECTION DECOUVRIR FORMATION */
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 20px;
+    color: #F83131;
+}
+
+.section_decouvrir {
+    display: flex;
+    justify-content: center;
 }
