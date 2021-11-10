@@ -309,13 +309,24 @@ section:nth-child(3){
     padding: 2em;
 }
 
-.col-1-of-2 button {
+.col-1-of-2 button, .colonne button {
     border: none;
     background-color: #F83131;
     color: white;
     padding: .5em;
     font-size: 12px;
     margin-top: 1em;
+}
+
+.btn_filtre:hover {
+    color: #000578;
+    border-color: #000578;
+    cursor: pointer;
+}
+
+.btn_focus:hover {
+    background-color: #000578;
+    cursor: pointer;
 }
 
 .col-2-of-2 {
@@ -368,22 +379,18 @@ section:nth-child(3){
 .block_f_actuelles {
     display: flex;
     justify-content: center;
+    align-items: stretch;
 }
 
-.details_f_actuelles img {
+.cadre_details img {
     max-width: 100%;
     height: auto;
 }
 
-.details_f_actuelles{
-    background-color: white;
-    padding: 4em;
-    cursor: pointer;
-}
-
-.details_f_actuelles:hover {
+.cadre_details:hover {
     background-color: #F0F1F5;
     transition: all 0.2s ease-in;
+    cursor: pointer;
 }
 
 .block_f_actuelles button {
@@ -400,19 +407,20 @@ section:nth-child(3){
     background-color: #000578;
 }
 
-.details_f_actuelles span {
+.cadre_details span {
     color: #F83131;
     font-weight: 600;
     margin: 0;
 }
 
-.details_f_actuelles h3 {
+.cadre_details h3 {
     line-height: 1.2em;
-    font-size: 2.3em;
+    font-size: 1.4em;
+    font-weight: 700;
     margin: 0.5em 0 0.8em 0;
 }
 
-.details_f_actuelles p {
+.cadre_details p {
     color: #AAA;
     font-weight: bold;
     font-size: 16px;
@@ -421,4 +429,62 @@ section:nth-child(3){
 
 .cadre_details {
     padding: 2em;
+    background-color: #FFF;
+}
+
+.cadre_details img{
+    width: 100%;
+}
+
+/* SECTION UNIVERS M2i */
+
+.row_colonne {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 5em;
+}
+
+.colonne {
+    width: 25%;
+    padding-right: 6em;
+}
+
+.colonne h2 {
+    font-size: 26px;
+    text-align: center;
+
+}
+
+.colonne p{
+    font-size: 18px;
+    line-height: 2em;
+}
+
+.colonne:nth-child(3) p{
+    margin-bottom: 2.2em;
+}
+
+.colonne i{
+    color: #F83131;
+    padding: .5em;
+}
+
+.colonne button i{
+    color: white;
+}
+
+.colonne button:hover {
+    cursor: pointer;
+    background-color: #000578;
+}
+
+.fa-user-graduate:before, .fa-thumbs-up:before, .fa-question-circle:before {
+    font-size: 50px;
+}
+
+.colonne h3 {
+    font-size: 26px;
+    padding-bottom: .5em;
+    padding-top: .5em;
 }
