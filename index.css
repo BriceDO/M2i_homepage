@@ -95,10 +95,8 @@ h1{
 }
 
 .icone_chercher{
-    text-align: left;
     cursor: pointer;
     margin-left: .5em;
-    display: flex;
 }
 
 .icone_chercher::before{
@@ -107,7 +105,7 @@ h1{
     border-radius: 50%;
     border: 1px solid grey;
     padding: 10px;
-    vertical-align: middle;
+
 }
 
 .recherche p {
@@ -366,13 +364,61 @@ section:nth-child(3){
 
 /* SECTION FORMATIONS ACTUELLES */
 
+
 .block_f_actuelles {
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 .details_f_actuelles img {
     max-width: 100%;
     height: auto;
+}
+
+.details_f_actuelles{
+    background-color: white;
+    padding: 4em;
+    cursor: pointer;
+}
+
+.details_f_actuelles:hover {
+    background-color: #F0F1F5;
+    transition: all 0.2s ease-in;
+}
+
+.block_f_actuelles button {
+    background-color: #F83131;
+    font-size: 50px;
+    color: white;
+    border: none;
+    padding: .5em;
+    cursor: pointer;
+    height: 100%;
+}
+
+.block_f_actuelles button:hover{
+    background-color: #000578;
+}
+
+.details_f_actuelles span {
+    color: #F83131;
+    font-weight: 600;
+    margin: 0;
+}
+
+.details_f_actuelles h3 {
+    line-height: 1.2em;
+    font-size: 2.3em;
+    margin: 0.5em 0 0.8em 0;
+}
+
+.details_f_actuelles p {
+    color: #AAA;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 2em;
+}
+
+.cadre_details {
+    padding: 2em;
 }
