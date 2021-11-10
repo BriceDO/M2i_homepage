@@ -15,6 +15,14 @@ body {
 
 /* Header */
 
+.content {
+    width: 100%;
+}
+
+.video {
+    width: 100%;
+}
+
 header{
     display: flex;
 }
@@ -205,6 +213,8 @@ h1{
 
 .block_decouvrir h3 {
     font-size: 18px;
+    margin-right: .5em;
+    margin-bottom: .5em;
 }
 
 .block_decouvrir{
@@ -261,6 +271,7 @@ section:nth-child(3){
     display: flex;
     justify-content: center;
     padding-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .section_financement{
@@ -281,6 +292,8 @@ section:nth-child(3){
 
 .block_financement h3 {
     font-size: 17px;
+    margin-right: .5em;
+    margin-bottom: .5em;
 }
 
 .type_financement, .col-1-of-2 span{
@@ -382,7 +395,7 @@ section:nth-child(3){
     align-items: stretch;
 }
 
-.cadre_details img {
+.cadre_details img, .map {
     max-width: 100%;
     height: auto;
 }
@@ -487,4 +500,79 @@ section:nth-child(3){
     font-size: 26px;
     padding-bottom: .5em;
     padding-top: .5em;
+}
+
+/* MAPMONDE */
+
+.img_contact {
+    background-image: linear-gradient(113deg, rgba(255,0,0,0.7) 0%, rgba(0,5,120,0.7) 70%), url(img/visuel-contact.jpg);
+    background-size: cover;
+}
+
+.cadre_contact {
+    display: flex;
+    justify-content: center;
+    padding-right: 10em;
+    padding-left: 10em;
+    padding-bottom: 5em;
+    padding-top: 5em;
+}
+
+.contenu_contact {
+    color: white;
+}
+
+.contenu_contact p {
+    width: 65%;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.cadre_contact button{
+    display: flex;
+    background-color: #F83131;
+    color: white;
+    border: none;
+    padding: .5em;
+    cursor: pointer;
+}
+
+.cadre_contact button i{
+    margin-right: .5em;
+}
+
+.btn_contact {
+    width: 35%;
+}
+
+/* FOOTER */
+
+.cadre_footer{
+    display: flex;
+    background-color: #000578;
+    color: white;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.cadre_footer h4{
+    color: white;
+    padding-bottom: 3em;
+}
+
+.cadre_footer a{
+    color: #EFECD5;
+}
+
+.liste_footer {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.liste_footer:nth-child(1) {
+    padding-right: 3em;
 }
