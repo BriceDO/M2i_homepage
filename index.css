@@ -271,7 +271,7 @@ section:nth-child(3){
     background: #FFF
 }
 
-.block_financement img {
+.block_financement img, .img_innovation {
     max-width: 100%;
     height: auto;
 }
@@ -280,7 +280,7 @@ section:nth-child(3){
     font-size: 17px;
 }
 
-.type_financement{
+.type_financement, .col-1-of-2 h6{
     font-size: 10px;
     color: #F83131;
 }
@@ -291,3 +291,69 @@ section:nth-child(3){
 }
 
 /* ABOUT */
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    background-color: #F8F8F8;
+    padding: 1em 60px;
+}
+
+.col-1-of-2 {
+    width: 50%;
+    padding: 2em;
+}
+
+.col-1-of-2 button {
+    border: none;
+    background-color: #F83131;
+    color: white;
+    padding: .5em;
+    font-size: 12px;
+    margin-top: 1em;
+}
+
+.col-2-of-2 {
+    width: 50%;
+    padding: 2em;
+}
+
+.col-1-of-2 ul li button {
+    border: #F83131 solid 1px;
+    background-color: #F8F8F8;
+    border-radius: 25px;
+    padding: .2em;
+    color: #F83131;
+    font-size: 11px;
+    font-weight: bolder;
+    margin: .1em;
+}
+
+.sousTitreAbout {
+    font-size: 26px;
+    margin-bottom: .5em;
+}
+
+.paragraphe {
+    margin-top: .5em;
+    line-height: 160%;
+    color: #606060;
+    font-size: 18px;
+}
+
+.img_innovation {
+    width: 70%;
+}
+
+.row-2 {
+    display: flex;
+    justify-content: center;
+    background-color: #F8F8F8;
+    padding: 5em 60px;
+}
+
+.cadre_about {
+    padding: 5em;
+    background-color: #F8F8F8;
+}
